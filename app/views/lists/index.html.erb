@@ -1,0 +1,34 @@
+<div id="checkout-bg"></div>
+<div id="checkout-prompt">
+  <div id="checkout-box">
+    <div>Enter your email before you check out</div>
+    <p>
+    <div id="email">Email: <input id="email-input"></input>
+      <p>
+      <button id="cancel">Cancel Checkout</button>
+      <button id="checkout-page">Go to Checkout Page</button>
+    </div>
+  </div>
+</div>
+<div id="booklist">
+  <% @books.each do |book| %>
+    <div id="book">
+      <div id="title">
+        <%= book["title"] %>
+      </div>
+      <div id="author">
+        Author: <%= book["author"] %>
+      </div>
+      <div id="year">
+        Year: <%= book["year"] %>
+      </div>
+      <div id="isbn">
+        ISBN: <%= book["isbn"] %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div id="hiddenlist">
+  <div id="mybooklist"></div>
+  <button id="checkout">Checkout</div>
+</div>
